@@ -1,29 +1,27 @@
 import 'package:flutter/material.dart';
-import 'common.dart';
 
-class ListPage extends StatefulWidget {
+
+class MyPage extends StatefulWidget {
   // final String name;
 
   // SliverContainer({Key key, @required this.name}) : super(key: key);
-  ListPage({Key key}) : super(key: key);
+  MyPage({Key key}) : super(key: key);
 
   @override
-  _ListPage createState() => _ListPage();
+  _MyPage createState() => _MyPage();
 }
 
-class _ListPage extends State<ListPage> {
+class _MyPage extends State<MyPage> {
   @override
   void initState() {
     super.initState();
   }
   @override
   Widget build(BuildContext context) {
-    Person ss = ModalRoute.of(context).settings.arguments;
-    print(ss.name);
-    print(ss.age);
+  
     return Scaffold(
       appBar: AppBar(
-        title: Text("list"),
+        title: Text("my page"),
       ),
       body: Center(
         child: Column(
@@ -38,7 +36,6 @@ class _ListPage extends State<ListPage> {
               ),
               onTap: (){
                 print("99999");
-                Navigator.pushNamed(context, '/mypage');
               },
             )
           ],

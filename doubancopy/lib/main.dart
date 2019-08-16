@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import  './pages/home.dart';
 import './pages/list.dart';
+import './pages/mypage.dart';
 
 void main() => runApp(MyApp());
 
@@ -45,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
       routes: <String ,WidgetBuilder> {
        '/': (BuildContext context) => HomePage(),
        '/list': (BuildContext context) => ListPage(),
+       '/mypage': (BuildContext context) => MyPage(),
      },
     );
     

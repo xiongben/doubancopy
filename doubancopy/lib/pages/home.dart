@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-
+import 'common.dart';
 
 class HomePage extends StatefulWidget {
   // final String name;
@@ -37,7 +37,7 @@ class _HomePage extends State<HomePage> {
               ),
               onTap: (){
                 print("99999");
-                Navigator.pushNamed(context, '/list');
+                Navigator.pushNamed(context, '/list',arguments: Person("xiongben", 26));
               },
             )
           ],
