@@ -37,7 +37,8 @@ class _HomePage extends State<HomePage> {
               ),
               onTap: (){
                 print("99999");
-                Navigator.pushNamed(context, '/list',arguments: Person("xiongben", 26));
+                Map ss = {"aa1":"sssss","ss1":"ddddd","rtrt":66777,"dfe":8888};
+                Navigator.pushNamed(context, '/list',arguments: Person("xiongben", 26, ss));
               },
             )
           ],

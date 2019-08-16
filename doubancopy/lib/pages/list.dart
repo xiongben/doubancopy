@@ -21,6 +21,7 @@ class _ListPage extends State<ListPage> {
     Person ss = ModalRoute.of(context).settings.arguments;
     print(ss.name);
     print(ss.age);
+    print(ss.tt);
     return Scaffold(
       appBar: AppBar(
         title: Text("list"),
